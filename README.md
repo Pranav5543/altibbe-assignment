@@ -102,40 +102,10 @@ A full-stack MERN (MongoDB, Express.js, React, Node.js) application for managing
 - `PUT /api/products/:id` - Update a product
 - `DELETE /api/products/:id` - Delete a product
 
-### Questions
-
-- `GET /api/questions` - Get all questions
-- `GET /api/questions/:id` - Get question by ID
-- `POST /api/questions` - Create a new question (Admin only)
-- `PUT /api/questions/:id` - Update a question (Admin only)
-- `DELETE /api/questions/:id` - Delete a question (Admin only)
-
 ### Reports
 
 - `POST /api/reports/generate/:productId` - Generate PDF report
 - `GET /api/reports` - Get all reports for user
-
-## Deployment on Render
-
-1. Push your code to GitHub (ensure `.gitignore` excludes unnecessary files like `node_modules`, `.env`).
-
-2. Connect your GitHub repository to Render.
-
-3. Deploy the backend as a Web Service:
-
-   - Set build command: `npm install`
-   - Set start command: `npm start`
-   - Add environment variables: `MONGO_URI`, `JWT_SECRET`, `NODE_ENV=production`
-
-4. Deploy the frontend as a Static Site:
-   - Set build command: `npm run build`
-   - Set publish directory: `build`
-   - Add environment variable: `REACT_APP_API_URL` (URL of the deployed backend)
-
-Alternatively, use the `render.yaml` file for multi-service deployment:
-
-- Push the `render.yaml` file to your repository.
-- In Render, select "Blueprint" and connect your repo to deploy both services automatically.
 
 ## Usage
 
